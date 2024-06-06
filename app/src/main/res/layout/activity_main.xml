@@ -42,37 +42,48 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <me.zhanghai.android.materialratingbar.MaterialRatingBar
-                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:numStars="1" />
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/idTxtRating"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9.5"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="1" />
 
-            <ImageView
-                android:id="@+id/idSha"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_share" />
+                <TextView
+                    android:id="@+id/idTxtRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9.5"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/idFav"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_favorite" />
+                <ImageView
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/idSha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_share" />
 
-            <ImageView
-                android:id="@+id/idBoo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_bookmark" />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/idFav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_favorite" />
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/idBoo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_bookmark" />
+
+            </LinearLayout>
 
 
         </LinearLayout>
