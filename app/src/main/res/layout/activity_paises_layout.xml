@@ -12,7 +12,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
-        android:layout_height="250dp"
+        android:layout_height="280dp"
         android:layout_margin="20dp">
 
         <RelativeLayout
@@ -40,21 +40,43 @@
             <TextView
                 android:id="@+id/txtSubSafari"
                 android:layout_width="wrap_content"
-
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imgCardSafari"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10sp"
                 android:gravity="center_horizontal"
-                android:text="@string/subtextsafari"
+                android:text="@string/subText"
                 android:textColor="#A8000000"
                 android:textSize="12sp" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShare"
+                style="@style/Widget.AppCompat.ActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSubSafari"
+                android:layout_margin="10sp"
                 android:text="@string/share"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:textColor="#3F51B5"
+                android:textSize="20sp"
+                app:cornerRadius="@dimen/cardview_compat_inset_shadow" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLearnMore"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSubSafari"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10sp"
+                android:text="Learn More"
+                android:textAllCaps="true"
+                android:textColor="#00BCD4"
+                android:textSize="20sp"
+                app:cornerRadius="@dimen/cardview_compat_inset_shadow" />
+
+
         </RelativeLayout>
 
 
