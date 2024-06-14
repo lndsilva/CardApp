@@ -273,7 +273,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="50dp"
                 android:contentDescription="@string/nuvem"
-                android:src="@drawable/baseline_cloud" />
+                android:src="@drawable/baseline_cloudy_snowing" />
 
             <TextView
                 android:id="@+id/txtTimeDarjjeling"
